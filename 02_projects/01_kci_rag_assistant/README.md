@@ -13,6 +13,8 @@
 
 ## 📐 System Architecture
 
+## 📐 System Architecture
+
 ```mermaid
 graph TD
     A[KCI Open API] -->|Ingestion| B[FastAPI Backend]
@@ -23,6 +25,8 @@ graph TD
     D -->|Context Retrieval| B
     B -->|Prompt Binding| F[LM Studio / Llama 3.1 8B]
     F -->|Inference Answer| E
+
+    style D fill:#1e293b,stroke:#38bdf8,stroke-width:2px,color:#ffffff
 ```
 
 ## 📂 Project Directory Structure

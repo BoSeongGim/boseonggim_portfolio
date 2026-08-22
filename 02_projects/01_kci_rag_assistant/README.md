@@ -13,8 +13,6 @@
 
 ## 📐 System Architecture
 
-## 📐 System Architecture
-
 ```mermaid
 graph TD
     A[KCI Open API] -->|Ingestion| B[FastAPI Backend]

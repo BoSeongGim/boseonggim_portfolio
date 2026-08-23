@@ -66,6 +66,7 @@ pip install -r requirements.txt
 ```powershell
 python -m pytest tests/ -v
 ```
+![LM Studio Prerequisites](docs/images/03_Verification_Suite.png)
 
 ### 4. Application Launch
 
@@ -75,8 +76,15 @@ python -m pytest tests/ -v
   ```
   *(Interactive API Docs: `http://127.0.0.1:8000/docs`)*
 
+![LM Studio Prerequisites](docs/images/04_Application Launch.png)
+![LM Studio Prerequisites](docs/images/4.1_1.png)
+![LM Studio Prerequisites](docs/images/4.1_2.png)
+
 * **Terminal 2 (Streamlit Frontend):**
   ```powershell
   streamlit run ../frontend/app.py
   ```
   *(Web Dashboard: `http://localhost:8501`)*
+
+![LM Studio Prerequisites](docs/images/4.2_1.png)
+![LM Studio Prerequisites](docs/images/4.2_2.png)

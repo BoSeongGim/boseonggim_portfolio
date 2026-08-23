@@ -53,6 +53,8 @@ graph TD
 * Launch LM Studio and load the **Llama 3.1 8B (Q8_0)** model.
 * Navigate to the **Developer (↔)** tab and start the `Local Server` (Default port: `1234`).
 
+![Streamlit Dashboard UI](docs/images/1. Prerequisites (Launch LM Studio Local Server).png)
+
 ### 2. Virtual Environment Setup & Dependencies
 ```powershell
 cd backend

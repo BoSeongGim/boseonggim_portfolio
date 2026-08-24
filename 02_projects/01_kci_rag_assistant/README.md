@@ -1,17 +1,35 @@
 # 🚀 KCI Open API-Based Local LLM & RAG Research Assistant System
 
-This repository provides a hybrid RAG (Retrieval-Augmented Generation) pipeline environment integrating the KCI (Korea Citation Index) Open API with local AI inference infrastructure.
+This repository provides a hybrid RAG (Retrieval-Augmented Generation) pipeline environment integrating the official **KCI (Korea Citation Index) Open API** with local AI inference infrastructure.
 It maintains strict API key security and decoupled architecture while providing a full-stack research assistant powered by a local Llama 3.1 8B model.
+
+---
+
+## 🏛️ Project Background & Data Sources (KCI Integration)
+To test and validate retrieval accuracy in a localized LLM environment, this project directly connects with official domestic academic data portals. 
+
+* **Data Source Portal**: KCI (Korea Citation Index) Official Portal
+* **API Integration**: Authorized access using **KCI Open API** and **OAI-PMH** protocols to fetch academic journal and paper metadata.
+
+<div align="center">
+  <img src="docs/images/00_introduce_KCI_OPEN_API_01.png" width="45%" alt="KCI Introduction 1"/>
+  <img src="docs/images/00_introduce_KCI_OPEN_API_02.png" width="45%" alt="KCI Introduction 2"/>
+</div>
+<p align="center"><i>Figure: Official KCI Portal & Open API Guide Integration</i></p>
+
+---
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: Streamlit
-- **Backend**: Python 3.10+, FastAPI, LangChain
-- **Vector DB**: ChromaDB (Local In-Memory / Persistent Vector Store)
-- **Embedding**: HuggingFace (`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`)
-- **Inference**: Local LLM (Llama 3.1 8B via LM Studio REST API)
+- **Backend**: Python 3.10+, FastAPI, LangChain[cite: 4]
+- **Vector DB**: ChromaDB (Local In-Memory / Persistent Vector Store)[cite: 4]
+- **Embedding**: HuggingFace (`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`)[cite: 4]
+- **Inference**: Local LLM (Llama 3.1 8B via LM Studio REST API)[cite: 4]
 
-## 📐 System Architecture
+---
+
+## 📐 System Architecture & Data Pipeline
 
 ```mermaid
 graph TD
@@ -26,22 +44,6 @@ graph TD
 
     style D fill:#1e293b,stroke:#38bdf8,stroke-width:2px,color:#ffffff
 ```
-
-## 📚 KCI Academic RAG Assistant
-An experimental RAG (Retrieval-Augmented Generation) pipeline designed to ingest, process, and query domestic academic research data via official API integrations.
-
-## 🏗️ Architecture & Data Pipeline
-This project establishes a data-driven pipeline leveraging official research data portals to test retrieval accuracy and context extraction in a localized LLM environment.
-
-![LM Studio Prerequisites](docs/images/00_introduce_KCI_OPEN_API_01.png)
-https://www.kci.go.kr/kciportal/aboutKci.kci
-
-![LM Studio Prerequisites](docs/images/00_introduce_KCI_OPEN_API_02.png)
-![LM Studio Prerequisites](docs/images/00_introduce_KCI_OPEN_API_03.png)
-https://www.kci.go.kr/kciportal/po/openapi/openDataPackGuide.kci?datasetBean.dtstTyCd=00https://gemini.google.com/u/1/app/1848b009deed72b8?hl=ko&pageId=none
-
-[ KCI Open API / OAI-PMH ] ---> (Data Ingestion & Schema Mapping) ---> [ Vector Embedding & Local LLM ] ---> (Context Retrieval & RAG Generation)
-
 
 ## 📂 Project Directory Structure
 

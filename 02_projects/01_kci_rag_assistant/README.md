@@ -33,7 +33,7 @@ To test and validate retrieval accuracy in a localized LLM environment, this pro
 
 ```mermaid
 graph TD
-    A[KCI Open API / OAI-PMH] -->|Ingestion & Schema Mapping| B[FastAPI Backend]
+    A[KCI Open API] -->|Ingestion| B[FastAPI Backend]
     B -->|Text Splitting| C[LangChain Pipeline]
     C -->|Vector Embedding| D[(Local Chroma DB)]
     
@@ -43,7 +43,7 @@ graph TD
     F -->|Inference Answer| E
 
     style D fill:#1e293b,stroke:#38bdf8,stroke-width:2px,color:#ffffff
-
+```
 
 ## 📂 Project Directory Structure
 

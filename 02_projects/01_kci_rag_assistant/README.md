@@ -27,6 +27,16 @@ graph TD
     style D fill:#1e293b,stroke:#38bdf8,stroke-width:2px,color:#ffffff
 ```
 
+## 📚 KCI Academic RAG Assistant
+An experimental RAG (Retrieval-Augmented Generation) pipeline designed to ingest, process, and query domestic academic research data via official API integrations.
+
+## 🏗️ Architecture & Data Pipeline
+This project establishes a data-driven pipeline leveraging official research data portals to test retrieval accuracy and context extraction in a localized LLM environment.
+
+[ KCI Open API / OAI-PMH ] ---> (Data Ingestion & Schema Mapping) ---> [ Vector Embedding & Local LLM ] ---> (Context Retrieval & RAG Generation)
+
+Data Ingestion (KCI Open API):Officially authorized to access and fetch academic journal and paper metadata using KCI Open API and OAI-PMH protocols.  Handles multi-format data ingestion and structures bibliographic information for downstream vector search.Processing & Orchestration:Collaborated with generative AI models (Gemini) to rapidly prototype and orchestrate the data processing scripts and workflow architecture.Next-Step Vision:Evolving from a localized pilot version into a robust, enterprise-grade architecture.Integrating Statistical Data Modeling (backed by ongoing Statistics and Data Science studies) to optimize retrieval relevance and multi-language expansion layers.
+
 ## 📂 Project Directory Structure
 
 ```text

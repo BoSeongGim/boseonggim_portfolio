@@ -33,9 +33,15 @@ An experimental RAG (Retrieval-Augmented Generation) pipeline designed to ingest
 ## 🏗️ Architecture & Data Pipeline
 This project establishes a data-driven pipeline leveraging official research data portals to test retrieval accuracy and context extraction in a localized LLM environment.
 
+![LM Studio Prerequisites](docs/images/00_introduce_KCI_OPEN_API_01.png)
+https://www.kci.go.kr/kciportal/aboutKci.kci
+
+![LM Studio Prerequisites](docs/images/00_introduce_KCI_OPEN_API_02.png)
+![LM Studio Prerequisites](docs/images/00_introduce_KCI_OPEN_API_03.png)
+https://www.kci.go.kr/kciportal/po/openapi/openDataPackGuide.kci?datasetBean.dtstTyCd=00https://gemini.google.com/u/1/app/1848b009deed72b8?hl=ko&pageId=none
+
 [ KCI Open API / OAI-PMH ] ---> (Data Ingestion & Schema Mapping) ---> [ Vector Embedding & Local LLM ] ---> (Context Retrieval & RAG Generation)
 
-Data Ingestion (KCI Open API):Officially authorized to access and fetch academic journal and paper metadata using KCI Open API and OAI-PMH protocols.  Handles multi-format data ingestion and structures bibliographic information for downstream vector search.Processing & Orchestration:Collaborated with generative AI models (Gemini) to rapidly prototype and orchestrate the data processing scripts and workflow architecture.Next-Step Vision:Evolving from a localized pilot version into a robust, enterprise-grade architecture.Integrating Statistical Data Modeling (backed by ongoing Statistics and Data Science studies) to optimize retrieval relevance and multi-language expansion layers.
 
 ## 📂 Project Directory Structure
 

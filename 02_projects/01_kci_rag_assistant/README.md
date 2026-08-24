@@ -17,6 +17,12 @@ To test and validate retrieval accuracy in a localized LLM environment, this pro
 </div>
 <p align="center"><i>Figure: Official KCI Portal & Open API Guide Integration</i></p>
 
+<div align="center">
+  <img src="docs/images/00_introduce_KCI_OPEN_API_04.png" width="45%" alt="KCI Open API Authentication Workflow"/>
+  <img src="docs/images/00_introduce_KCI_OPEN_API_05.png" width="45%" alt="KCI API Key Issuance"/>
+</div>
+<p align="center"><i>Figure 2: API Key Provisioning & Authentication Verification Flow</i></p>
+
 ---
 
 ## 🛠️ Tech Stack
